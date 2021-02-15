@@ -1,5 +1,7 @@
 import React from 'react';
-
+/*
+  This is reusable component to show data disabled compenets on basis of props
+*/
 const DisabledInput = (props) => {
   return (
     <input 

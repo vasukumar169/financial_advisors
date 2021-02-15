@@ -11,7 +11,12 @@ const initialState = {
     smallCap: ''
   }
 }
-
+/*
+This reducer function is used to return new state on basis of action type.
+When a row is slected in by risk prefernce level, it stores the data in redux store
+and is used at calculator route.
+Also data entered at calculator route, needs to be shown on the same route while traversing so stored in store
+*/ 
 const reducer = (state = initialState, action) => {
   if (action.type === 'SELECT_RISK_ROW') {
     let selectedRiskData = riskData.filter(data => data.riskPreference === action.value)
