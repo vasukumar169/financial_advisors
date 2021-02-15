@@ -1,4 +1,5 @@
 import React from 'react';
+// This is a statless component used to show risk prefernce component
 
 const RiskPreference = (props) => {
   let {riskNo, setRiskPrefernce, selectedRow, history} = props

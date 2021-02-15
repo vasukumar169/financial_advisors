@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts'
+/*
+  This is a donut component to show pie charts.
+  It is using a library called react-apexharts
+*/
 
 class Donut extends Component {
 
@@ -25,6 +29,8 @@ class Donut extends Component {
     this.updateDonut()
   }
   updateDonut = () => {
+    // this function update the donut pie chart values to the new risk level selected in risk preference
+    
     if (this.props.riskPreference.length > 0) {
       let data = [...Object.values(this.props.riskPreference[0])]
       if (data.length > 0) {

@@ -1,4 +1,6 @@
 import React from 'react';
+// This is a statless component used to show risk prefernnce table.
+// It also highlights the row which is selected from riskPreference componnent
 
 const RiskTable = (props) => {
   return (

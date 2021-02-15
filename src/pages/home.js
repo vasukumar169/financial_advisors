@@ -13,12 +13,10 @@ class Home extends React.Component {
       showPie: false
     }
   }
-  componentDidMount () {
-    // console.log(this)
-    // console.log(riskPreference)
-  }
-
+  
   setRiskPrefernce = (val) => {
+    /* this is used to manage the risk level in redux store
+    while managing the data in the whole application */
     this.props.onSetRiskPreference(val)
   }
 
